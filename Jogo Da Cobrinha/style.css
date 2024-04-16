@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+canvas {
+    width: 500px;
+    background-color: #111;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.score-value {
+    font-weight: 700;
+    font-size: 3rem;
+    display: block;
+    margin-top: -10px;
+}
+
+.menu-screen {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.game-over {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.final-score {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.btn-play {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.teclas {
+    margin-top: 50px;
+    display: none;
+}
+
+.up, .left, .down, .right {
+    color: white;
+    font-size: 2rem;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #202020;
+    box-shadow: 0px 3px 0 #1b1b1b, 0px 6px 0 black;
+    outline: none;
+}
+
+.up:active, .left:active, .down:active, .right:active {
+    box-shadow: inset 0px 4px 0 #0e0e0e;
+}
+
+.exibir {
+    margin-top: 10%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 20px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #202020;
+    box-shadow: 0px 3px 0 #1b1b1b, 0px 6px 0 black;
+    outline: none;
+}
+
+.exibir:active {
+    box-shadow: inset 0px 4px 0 #0e0e0e;
+}
+
+@media (max-width: 800px) {
+    canvas {
+        width: 300px;
+    }
+
+    .score {
+        font-size: 1.2rem;
+    }
+    
+    .score-value {
+        font-size: 2rem;
+    }
+
+    .teclas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .exibir {
+        display: none;
+    }
+}

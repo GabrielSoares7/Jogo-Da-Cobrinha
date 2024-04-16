@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Jogo Da Cobrinha</title>
+    <link rel="icon" type="image/png" href="cobrinha.png"/>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="score">
+        SCORE <span class="score-value">00</span>
+    </div>
+    <div class="menu-screen">
+        <span class="game-over">
+            GAME OVER
+        </span>
+        <span class="final-score">
+            SCORE: <span></span>
+        </span>
+        <button class="btn-play">
+            Jogar Novamente
+        </button>
+    </div>
+    <canvas width="600" height="600"></canvas>
+    <div>
+        <button class="exibir">Exibir Teclas</button>
+    </div>
+    <div class="teclas">
+        <div>
+            <button class="up"><i class="bi bi-arrow-up"></i></button>
+        </div>
+        <div>
+            <button class="left"><i class="bi bi-arrow-left"></i></button>
+            <button class="down"><i class="bi bi-arrow-down"></i></button>
+            <button class="right"><i class="bi bi-arrow-right"></i></button>
+        </div>
+    </div>
+</body>
+</html>
